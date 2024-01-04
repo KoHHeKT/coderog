@@ -17,8 +17,8 @@ func main() {
 	cls.CallCls()
 	fmt.Println(initialText)
 	red := color.New(color.FgRed).SprintFunc()
-	fmt.Printf(initialText, red("RedTextInsertion"))
+	fmt.Printf("Some text %s", red("RedTextInsertion"))
+	time.Sleep(refreshTimeout)
 	cls.CallCls()
-	//time.Sleep(refreshTimeout)
 	fmt.Println(initialText)
 }
